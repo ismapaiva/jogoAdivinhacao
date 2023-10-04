@@ -19,7 +19,8 @@ exibirMensagemInicial();
 
 //função para gerar um número aleatório:
 function gerarNumeroAleatorio(){
-    return Math.floor(Math.random() *100+1)
+    
+    return Math.floor((Math.random() * 100) +1)
 }
 
 
@@ -58,7 +59,7 @@ function limparCampo(){
 
 // função para reiniciar o jogo
 function reiniciarJogo(){
-    numeroAleatorio = 5 /* gerarNumeroAleatorio(); */ // gera um novo número aleatorio
+    numeroAleatorio = gerarNumeroAleatorio(); // gera um novo número aleatorio
     limparCampo(); // função limpar campo é chamado
     tentativas = 1; // tentativa volta a valer 1
     chutes = []; // reinicio o array que armazena os números churados
