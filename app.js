@@ -3,8 +3,8 @@ let numeroAleatorio = gerarNumeroAleatorio();
 let chute; // valor chutado pelo usuário
 let chutes = []; // lista que armazenará todos os números chutados
 let tentativas =1;
-// posso criar uma funçÃo em vez de digitar o código a cima
 
+//função que altera o texto na tela
 function alterarTextoNaTela(tag,texto){
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
@@ -19,11 +19,8 @@ exibirMensagemInicial();
 
 //função para gerar um número aleatório:
 function gerarNumeroAleatorio(){
-    
     return Math.floor((Math.random() * 100) +1)
 }
-
-
 
 function verificarChute(){
     // .value, o programa le o código digitado pelo usuario e armazena na variavel chute:
@@ -49,7 +46,6 @@ function verificarChute(){
         limparCampo()
     }
 }
-
 // função para limpar o campo input
 function limparCampo(){
     //limpar o campo do input
